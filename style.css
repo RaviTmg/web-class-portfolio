@@ -1,0 +1,136 @@
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(44, 62, 80);
+    color: white;
+    padding: 8px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.banner-section {
+    position: relative;
+}
+.banner-backdrop {
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+
+    justify-content: center;
+}
+
+.portfolio-items img {
+    width: 30%;
+
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+
+.portfolio-items img:hover {
+    filter: brightness(0.6);
+}
+
+.portfolio-heading {
+    text-align: center;
+}
+
+.about-section {
+    text-align: center;
+    color: white;
+    background-color: rgb(21 156 129);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.btn-download {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.btn-download:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 480px)  {
+    .portfolio-items img {
+        width: 47%;
+    }
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-input {
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.btn-send {
+    display: block;
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgb(44, 62, 80);
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+}
+
+footer {
+    margin-top: 16px;
+    background-color: rgb(44, 62, 80);
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
