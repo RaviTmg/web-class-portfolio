@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ravi Tamang - Software Engineer</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
     <nav>
@@ -68,15 +69,16 @@
             <form class="contact-form">
                 <label>
                     <div>First Name</div>
-                    <input class="contact-input"/>
+                    <input class="contact-input" id="input_first_name"/>
                 </label>
                 <label>
                     <div>Message</div>
-                    <textarea class="contact-input"></textarea>
+                    <textarea class="contact-input" id="input_message"></textarea>
                 </label>
-                <button class="btn-send">
+                <button class="btn-send" id="btn_send">
                     Send
                 </button>
+                <div id="message_output"></div>
             </form>
         </section>
     </main>
